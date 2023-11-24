@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:new_besho5/wedgets/start.dart';
+// ignore: unused_import
 import 'package:url_launcher/url_launcher.dart';
 
 // ignore: must_be_immutable
@@ -23,7 +25,15 @@ class SocialMediaIcon extends StatelessWidget {
           radius: 20,
         ),
         onTap: () {
-          launchUrl(Uri.parse(socialMediaLink), mode:LaunchMode.externalApplication);
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => startSocialMedia(
+                socialMedia: 'youtub',
+                socialMediaLink: 'https://wa.me/+201026187327',
+              ),
+            ),
+          );
         },
       ),
     );

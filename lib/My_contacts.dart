@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'wedgets/contacts_grid.dart';
+
 // ignore: must_be_immutable
 class MyContact extends StatelessWidget {
   MyContact({super.key});
@@ -104,4 +105,3 @@ class MyContact extends StatelessWidget {
     );
   }
 }
-
