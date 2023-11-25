@@ -14,6 +14,8 @@ class MyContact extends StatelessWidget {
     '6.jpg': 'https://twitter.com/home?lang=ar',
     '7.jpg': 'tg-me.com/Besho8',
     '8.jpg': 'https://www.snapchat.com/ar',
+    '10.jpg': '',
+    '11.png': '',
   };
   @override
   Widget build(BuildContext mycontext) {
@@ -58,7 +60,7 @@ class MyContact extends StatelessWidget {
                         Icons.near_me_rounded,
                       ),
                       onPressed: () {
-                        launchUrl(Uri.parse('camera:01026187327'));
+                        launchUrl(Uri.parse('tg:01026187327'));
                       },
                     ),
                   ],

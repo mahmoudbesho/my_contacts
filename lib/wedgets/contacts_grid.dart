@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'social_Media_Icon.dart';
+
 class ContactGrid extends StatelessWidget {
   const ContactGrid({
     super.key,
@@ -12,8 +13,8 @@ class ContactGrid extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.builder(
       itemCount: socialMedia.length,
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3),
+      gridDelegate:
+          SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
       itemBuilder: (mycontext, index) {
         return SocialMediaIcon(
           socialMedia: socialMedia.keys.toList()[index],
