@@ -21,6 +21,23 @@ class MyContact extends StatelessWidget {
       backgroundColor: Color.fromARGB(255, 7, 7, 30),
       appBar: AppBar(
         backgroundColor: Colors.teal,
+        title: Text('النفايات الالكترونيه'),
+        leading: IconButton(
+            onPressed: () {
+              launchUrl(
+                Uri.parse('tg:01026187327'),
+              );
+            },
+            icon: Icon(Icons.home)),
+        actions: [
+          IconButton(
+              onPressed: () {
+                launchUrl(
+                  Uri.parse('tg:01026187327'),
+                );
+              },
+              icon: Icon(Icons.output)),
+        ],
       ),
       body: SizedBox(
         width: double.infinity,
@@ -33,7 +50,7 @@ class MyContact extends StatelessWidget {
                 height: 30,
               ),
               CircleAvatar(
-                backgroundImage: AssetImage('assets/01.jpg'),
+                backgroundImage: AssetImage('assets/start.jpg'),
                 radius: 100,
               ),
               SizedBox(height: 10),
@@ -43,7 +60,7 @@ class MyContact extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Mahmoud shreef',
+                      'Welcom be comfortabl',
                       style: TextStyle(
                           fontSize: 25,
                           fontWeight: FontWeight.bold,
